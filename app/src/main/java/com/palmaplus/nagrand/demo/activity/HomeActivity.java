@@ -21,7 +21,7 @@ import butterknife.BindView;
 /**
  * Created by lchad on 2016/11/1.
  * Github: https://github.com/lchad
- * 功能列表主页哈哈哈
+ * 功能列表主页哈哈哈呵呵呵
  */
 public class HomeActivity extends BaseActivity {
 
