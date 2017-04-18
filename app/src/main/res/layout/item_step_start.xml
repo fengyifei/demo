@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_container"
+        android:layout_width="85dp"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/icon_details_start"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/red_dot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="#dbdbdb"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/left_container"
+        android:text="@string/from"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/from"
+        android:layout_toRightOf="@id/from"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        tools:text="我的位置"/>
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/from"
+        android:layout_toRightOf="@id/position"
+        android:text="@string/get_into"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/from"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/list_item_divider"/>
+
+</RelativeLayout>
